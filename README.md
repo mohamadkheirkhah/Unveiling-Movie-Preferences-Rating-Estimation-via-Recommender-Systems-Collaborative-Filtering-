@@ -35,9 +35,11 @@ The dataset used is derived from the MovieLens "ml-latest-small" dataset [https:
 
 The collaborative filtering cost function is defined as:
 
-$$
-J(\mathbf{x}, \mathbf{w}, b) = \frac{1}{2}\sum_{(i,j):r(i,j)=1}(\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2 + \frac{\lambda}{2}\sum_{j=0}^{n_u-1}\sum_{k=0}^{n-1}(\mathbf{w}^{(j)}_k)^2 + \frac{\lambda}{2}\sum_{i=0}^{n_m-1}\sum_{k=0}^{n-1}(\mathbf{x}_k^{(i)})^2
-$$
+The collaborative filtering cost function is given by:
+
+\[ J(\mathbf{x}, \mathbf{w}, b) = \frac{1}{2} \sum_{(i,j):r(i,j)=1} \left( (\mathbf{w}^{(j)} \cdot \mathbf{x}^{(i)} + b^{(j)} - y^{(i,j)})^2 \right) + \frac{\lambda}{2} \sum_{j=0}^{n_u-1} \sum_{k=0}^{n-1} (\mathbf{w}^{(j)}_k)^2 + \frac{\lambda}{2} \sum_{i=0}^{n_m-1} \sum_{k=0}^{n-1} (\mathbf{x}_k^{(i)})^2 \]
+
+This cost function represents the error in predicting user ratings for movies. The first term measures the squared difference between predicted and actual ratings for movies that have been rated. The second and third terms are regularization terms to prevent overfitting. The hyperparameter \(\lambda\) controls the strength of regularization.
 
 ## 5 - Learning Movie Recommendations
 
