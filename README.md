@@ -27,7 +27,7 @@ Collaborative filtering involves generating two vectors for each user and movie:
 
 ## 3 - Movie Ratings Dataset
 
-The dataset used is derived from the MovieLens "ml-latest-small" dataset, focusing on movies from the years since 2000. It includes ratings on a scale of 0.5 to 5 in 0.5 steps. The reduced dataset has 443 users and 4778 movies.
+The dataset used is derived from the MovieLens "ml-latest-small" dataset [https://grouplens.org/datasets/movielens/latest/], focusing on movies from the years since 2000. It includes ratings on a scale of 0.5 to 5 in 0.5 steps. The reduced dataset has 443 users and 4778 movies.
 
 ## 4 - Collaborative Filtering Learning Algorithm
 
