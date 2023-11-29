@@ -40,7 +40,7 @@ The collaborative filtering cost function is given by:
 <img width="1134" alt="Screenshot 2023-11-29 at 1 39 01 PM" src="https://github.com/mohamadkheirkhah/Unveiling-Movie-Preferences-Rating-Estimation-via-Recommender-Systems-Collaborative-Filtering-/assets/144957293/89ba135a-2ca6-4606-a853-127d205f2af8">
 
 
-This cost function represents the error in predicting user ratings for movies. The first term measures the squared difference between predicted and actual ratings for movies that have been rated. The second and third terms are regularization terms to prevent overfitting. The hyperparameter \(\lambda\) controls the strength of regularization.
+This cost function represents the error in predicting user ratings for movies. The first term measures the squared difference between predicted and actual ratings for movies that have been rated. The second and third terms are regularization terms to prevent overfitting. The hyperparameter \(lambda\) controls the strength of regularization.
 
 ## 5 - Learning Movie Recommendations
 
